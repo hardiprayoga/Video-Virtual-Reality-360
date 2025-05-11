@@ -7,39 +7,36 @@ function index() {
     <>
       <Header />
 
-      {/* <div className="relative w-full h-screen mt-1 bg-white"> */}
-        <div className="relative w-full h-screen mt-1">
-          {/* Background Video */}
-          <video
-            className="absolute top-0 left-0 w-full h-full object-cover z-0"
-            autoPlay
-            muted
-            loop
-            playsInline
-          >
-            <source src="/images/drone.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+      <div className="relative w-full h-screen mt-1">
+        <video
+          className="absolute top-0 left-0 w-full h-full object-cover z-0"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="/images/drone.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-          {/* Tombol interaktif di atas background video */}
-          <div className="absolute top-0 left-0 right-0 flex justify-center z-10">
-            <div className="flex gap-4">
-              <button
-                className="relative"
-                onClick={() => window.open('/3dvista-cipanas jadi/index.htm', '_blank')}
-              >
-                <img
-                  src="/images/icon1.jpg"
-                  alt="Icon 1"
-                  className="icon-size object-cover hover:scale-105 transition-transform duration-300"
-                />
-                <span className="absolute bottom-2 left-1/2 -translate-x-1/2 text-white text-lg font-bold transition-transform duration-300">
-                  Cipanas Sumursari
-                </span>
-              </button>
-            </div>
+        <div className="absolute top-0 left-0 right-0 flex justify-center z-10">
+          <div className="flex gap-4">
+            <button
+              className="relative"
+              onClick={() => window.open('/3dvista-cipanas jadi2/index.htm', '_blank')}
+            >
+              <img
+                src="/images/icon1.jpg"
+                alt="Icon 1"
+                className="icon-size object-cover hover:scale-105 transition-transform duration-300"
+              />
+              <span className="absolute bottom-2 left-1/2 -translate-x-1/2 text-white text-lg font-bold transition-transform duration-300">
+                Cipanas Sumursari
+              </span>
+            </button>
           </div>
         </div>
+      </div>
 
       <div className="flex flex-col items-center justify-center py-12 bg-white">
         <h1 className="text-3xl font-bold text-gray-800 font-poppins mb-6">
@@ -66,23 +63,21 @@ function index() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center pb-12 bg-white">
+      {/* Bagian Lokasi yang sudah responsif */}
+      <div className="flex flex-col items-center justify-center pb-12 bg-white px-4">
         <h1 className="text-3xl font-bold font-poppins text-gray-800 pb-3">
           LOKASI
         </h1>
-        <div className="flex justify-center w-full">
-          <div className="shadow-md">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.2284941377474!2d107.99799159999999!3d-7.1233197999999965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68b455f61b9b9f%3A0x4f532136d3e4ae15!2sKolam%20Renang%20Cipanas%20sumur%20sari!5e0!3m2!1sid!2sid!4v1713429999999!5m2!1sid!2sid"
-              width="1000"
-              height="400"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              title="Kolam Renang Cipanas Sumur Sari"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+        <div className="w-full max-w-5xl aspect-video shadow-md">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.2284941377474!2d107.99799159999999!3d-7.1233197999999965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68b455f61b9b9f%3A0x4f532136d3e4ae15!2sKolam%20Renang%20Cipanas%20sumur%20sari!5e0!3m2!1sid!2sid!4v1713429999999!5m2!1sid!2sid"
+            className="w-full h-full rounded-md"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            title="Kolam Renang Cipanas Sumur Sari"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
 
