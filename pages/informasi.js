@@ -12,7 +12,7 @@ export default function Informasi() {
         {/* Paragraf 1 */}
         <div className="flex flex-col md:flex-row items-center gap-6 max-w-5xl">
           <img
-            src="/images/cipanas.jpg"
+            src="./images/cipanas.jpg"
             alt="Pemandian Air Panas"
             className="w-full md:w-1/2 rounded-lg shadow-md"
           />
@@ -26,7 +26,7 @@ export default function Informasi() {
         {/* Paragraf 2 */}
         <div className="flex flex-col md:flex-row-reverse items-center gap-6 max-w-5xl">
           <img
-            src="/images/fasilitas.jpg"
+            src="./images/fasilitas.jpg"
             alt="Fasilitas Kolam"
             className="w-full md:w-1/2 rounded-lg shadow-md"
           />
@@ -40,7 +40,7 @@ export default function Informasi() {
         {/* Paragraf 3 */}
         <div className="flex flex-col md:flex-row items-center gap-6 max-w-5xl">
           <img
-            src="/images/pemandangan.png"
+            src="./images/pemandangan.png"
             alt="Pemandangan Sekitar"
             className="w-full md:w-1/2 rounded-lg shadow-md"
           />

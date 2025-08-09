@@ -15,7 +15,7 @@ function index() {
           loop
           playsInline
         >
-          <source src="/images/drone.mp4" type="video/mp4" />
+          <source src="./images/drone.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -26,7 +26,7 @@ function index() {
               onClick={() => window.open('/3dvista-cipanas jadi2/index.htm', '_blank')}
             >
               <img
-                src="/images/icon1.jpg"
+                src="./images/icon1.jpg"
                 alt="Icon 1"
                 className="icon-size object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -44,7 +44,7 @@ function index() {
         </h1>
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 px-10">
           <img
-            src="/images/cipanas.jpg"
+            src="./images/cipanas.jpg"
             alt="Cipanas Sumursari"
             className="w-full md:w-1/2 rounded-lg shadow-md"
           />
